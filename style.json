@@ -1,0 +1,40 @@
+{
+    "borders": {
+        "enabled": true,
+        "color": "#11111b",
+        "gap": 20.0,
+        "top": {
+            "enabled": true,
+            "height": 20.0
+        },
+        "left": {
+            "enabled": true,
+            "width": 40.0
+        },
+        "right": {
+            "enabled": true,
+            "width": 20.0
+        },
+        "bottom": {
+            "enabled": true,
+            "height": 20.0
+        },
+        "corners": {
+            "enabled": true,
+            "radius": 15,
+            "topleft": {
+                "enabled": true,
+                "radius": 25
+            },
+            "topright": {
+                "enabled": true
+            },
+            "bottomleft": {
+                "enabled": true
+            },
+            "bottomright": {
+                "enabled": true
+            }
+        }
+    }
+}
