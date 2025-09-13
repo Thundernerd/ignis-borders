@@ -80,7 +80,7 @@ class Border(Window):
 
         r = style.borders.corners.topleft.radius if style.borders.corners.topleft.radius is not None else style.borders.corners.radius
 
-        if style.borders.corners.topleft.enabled:
+        if style.borders.corners.enabled and style.borders.corners.topleft.enabled:
             ctx.arc(x+r, y+r, r, 180*deg_2_rad, 270*deg_2_rad)
         else:
             ctx.move_to(x, y)
@@ -101,7 +101,7 @@ class Border(Window):
 
         r = style.borders.corners.topright.radius if style.borders.corners.topright.radius is not None else style.borders.corners.radius
 
-        if style.borders.corners.topright.enabled:
+        if style.borders.corners.enabled and style.borders.corners.topright.enabled:
             ctx.arc(x+w-r, y+r, r, -90*deg_2_rad, 0*deg_2_rad)
         else:
             ctx.line_to(x+w, y)
@@ -126,7 +126,7 @@ class Border(Window):
 
         r = style.borders.corners.bottomright.radius if style.borders.corners.bottomright.radius is not None else style.borders.corners.radius
 
-        if style.borders.corners.bottomright.enabled:
+        if style.borders.corners.enabled and style.borders.corners.bottomright.enabled:
             ctx.arc(x+w-r, y+h-r, r, 0*deg_2_rad, 90*deg_2_rad)
         else:
             ctx.line_to(x+w, y+h)
@@ -151,7 +151,7 @@ class Border(Window):
 
         r = style.borders.corners.bottomleft.radius if style.borders.corners.bottomleft.radius is not None else style.borders.corners.radius
 
-        if style.borders.corners.bottomleft.enabled:
+        if style.borders.corners.enabled and style.borders.corners.bottomleft.enabled:
             ctx.arc(x+r, y+h-r, r, 90*deg_2_rad, 180*deg_2_rad)
         else:
             ctx.line_to(x, y+h)
